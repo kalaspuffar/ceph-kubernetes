@@ -28,6 +28,13 @@ EOF
 sysctl --system
 ```
 
+#### A kubernetes cluster don't like swap
+
+You could either comment out your swap drives in `/etc/fstab` or just run swapoff every boot.
+```
+swapoff -a
+```
+
 #### Install Docker with recommended settings
 
 ```
